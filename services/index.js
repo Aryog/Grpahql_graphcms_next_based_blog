@@ -84,7 +84,7 @@ export const getRecentPosts =async()=>
     query GetPostDetails(){
         posts(
             orderBy : createdAt_DESC
-            last : 3
+            first : 3
         )
             {
              title
@@ -106,6 +106,7 @@ export const getSimilarPosts = async (categories,slug)=>{
     query GetPostDetails($slug:String!, $categories : [String!]){
         posts(
             where:{slug_not: $slug, AND:{categories_some:{slug_in:$categories}} }
+            orderBy : createdAt_DESC
             last:3
         )
         {
