@@ -6,9 +6,13 @@ export  const getPosts = async()=>
 {
     const query = gql`
     query MyQuery{
-        postsConnection {
+        postsConnection  (
+
+          orderBy : createdAt_DESC
+    
+        ){
           edges {
-            node {
+            node{
               author {
                 bio
                 name
@@ -79,7 +83,7 @@ export const getRecentPosts =async()=>
     const query =gql`
     query GetPostDetails(){
         posts(
-            orderBy : createdAt_ASC
+            orderBy : createdAt_DESC
             last : 3
         )
             {
