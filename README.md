@@ -1,3 +1,10 @@
+# [**View Live Website**](https://grpahql-graphcms-next-based-blog.vercel.app/)
+  
+
+![Screenshot (22)](https://user-images.githubusercontent.com/87793885/143283901-b3df49b4-d350-433e-a27d-3f92e16e42bb.png)
+
+
+
 # Next.js + Tailwind CSS Example
 
 This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v2.2)](https://blog.tailwindcss.com/tailwindcss-2-2) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
